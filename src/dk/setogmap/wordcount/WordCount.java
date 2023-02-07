@@ -30,7 +30,7 @@ public class WordCount {
         BufferedReader reader = new BufferedReader(new InputStreamReader(connection.openStream()));
         String inputLine = "";
         while(inputLine != null){
-            wordCounter2(inputLine, list, updatedMap);
+            wordCounter(inputLine, list, updatedMap);
             inputLine = reader.readLine();
         }
         reader.close();
@@ -53,19 +53,18 @@ public class WordCount {
     }
     private static Map<String,Integer> wordCounter2(String input, List<String> words, Map<String,Integer> tempMap){
         String[] tempStr = words.toArray(new String[0]);
-        String[] strToTest = input.split("[,.-0123456789;:<>=@()?´|/&%! ]");
-        for(String listStr: tempStr){
-            for(String inputStr: strToTest){
-                if(inputStr.contains(listStr)){
-                    if(tempMap.containsKey(listStr)){
-                        tempMap.put(listStr, tempMap.get(listStr) +1);
-                    }
-                    else{
-                        tempMap.put(listStr, 1);
-                    }
+        int tempInt;
+        for(String testStr : tempStr){
+                tempInt = frequency(input, testStr);
+                if(tempMap.containsKey(testStr)){
+                    tempMap.put(testStr, tempMap.get(testStr)+ tempInt);
                 }
-            }
         }
         return tempMap;
+    }
+    public static int frequency(String input, String test){
+        int amount = 0;
+
+        return amount;
     }
 }
