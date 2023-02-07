@@ -1,8 +1,6 @@
 package dk.setogmap.lotto;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Random;
+import java.util.*;
 
 public class Lotto {
     static HashSet<Integer> lotteryTicket = new HashSet<>();
@@ -47,6 +45,8 @@ public class Lotto {
                 bonusNumberCount++;
             }
         }
+        lotteryTicket.retainAll(lotteryNumbers.values());
+        System.out.println(lotteryTicket);
         System.out.println("Amount of winning numbers: " + winningNumberCount);
         System.out.println("Amount of bonus numbers: " + bonusNumberCount);
     }
