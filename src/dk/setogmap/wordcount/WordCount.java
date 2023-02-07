@@ -28,7 +28,7 @@ public class WordCount {
         BufferedReader reader = new BufferedReader(new InputStreamReader(connection.openStream()));
         String inputLine = "";
         while(inputLine != null){
-            wordCounter(inputLine, list, updatedMap);
+            wordCounter2(inputLine, list, updatedMap);
             inputLine = reader.readLine();
         }
         reader.close();
@@ -44,6 +44,23 @@ public class WordCount {
                 }
                 else{
                     tempMap.put(testStr,1);
+                }
+            }
+        }
+        return tempMap;
+    }
+    private static HashMap<String,Integer> wordCounter2(String input, ArrayList<String> words, HashMap<String,Integer> tempMap){
+        String[] tempStr = words.toArray(new String[0]);
+        String[] strToTest = input.split("[,.-0123456789;:<>=@()?´|/&%! ]");
+        for(String listStr: tempStr){
+            for(String inputStr: strToTest){
+                if(inputStr.contains(listStr)){
+                    if(tempMap.containsKey(listStr)){
+                        tempMap.put(listStr, tempMap.get(listStr) +1);
+                    }
+                    else{
+                        tempMap.put(listStr, 1);
+                    }
                 }
             }
         }
