@@ -6,10 +6,12 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class WordCount {
     public static void main(String[] args){
-        ArrayList<String> wordList = new ArrayList<>(){{
+        List<String> wordList = new ArrayList<>(){{
            add("Ukraine");
            add("Covid");
            add("DF");
@@ -22,8 +24,8 @@ public class WordCount {
             ioe.printStackTrace();
         }
     }
-    public static HashMap<String,Integer> wordCountFromWebpage(ArrayList<String> list) throws IOException {
-        HashMap<String,Integer> updatedMap = new HashMap<>();
+    public static Map<String,Integer> wordCountFromWebpage(List<String> list) throws IOException {
+        Map<String,Integer> updatedMap = new HashMap<>();
         URL connection = new URL("https://dr.dk/");
         BufferedReader reader = new BufferedReader(new InputStreamReader(connection.openStream()));
         String inputLine = "";
@@ -35,7 +37,7 @@ public class WordCount {
         return updatedMap;
     }
 
-    private static HashMap<String, Integer> wordCounter(String input, ArrayList<String> words, HashMap<String, Integer> tempMap) {
+    private static Map<String, Integer> wordCounter(String input, List<String> words, Map<String, Integer> tempMap) {
         String[] tempStr = words.toArray(new String[0]);
         for(String testStr: tempStr){
             if(input.contains(testStr)){
@@ -49,7 +51,7 @@ public class WordCount {
         }
         return tempMap;
     }
-    private static HashMap<String,Integer> wordCounter2(String input, ArrayList<String> words, HashMap<String,Integer> tempMap){
+    private static Map<String,Integer> wordCounter2(String input, List<String> words, Map<String,Integer> tempMap){
         String[] tempStr = words.toArray(new String[0]);
         String[] strToTest = input.split("[,.-0123456789;:<>=@()?´|/&%! ]");
         for(String listStr: tempStr){

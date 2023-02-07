@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0824d7d-c8a6-468e-bc04-3c132f20f714" name="Changes" comment="Small tweaks no real changes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dk/setogmap/wordcount/WordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dk/setogmap/wordcount/WordCount.java" afterDir="false" />
-    </list>
+    <list default="true" id="f0824d7d-c8a6-468e-bc04-3c132f20f714" name="Changes" comment="Tweaks to search2 counter" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +43,7 @@
       <updated>1675597534934</updated>
       <workItem from="1675597536319" duration="9295000" />
       <workItem from="1675681616410" duration="1757000" />
-      <workItem from="1675755557188" duration="1353000" />
+      <workItem from="1675755557188" duration="1762000" />
     </task>
     <task id="LOCAL-00001" summary="Small tweaks no real changes">
       <created>1675617462821</created>
@@ -55,7 +52,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675617462821</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Tweaks to search2 counter">
+      <created>1675756991610</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675756991610</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -74,6 +78,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Small tweaks no real changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small tweaks no real changes" />
+    <MESSAGE value="Tweaks to search2 counter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tweaks to search2 counter" />
   </component>
 </project>
