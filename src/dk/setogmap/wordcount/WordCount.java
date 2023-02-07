@@ -30,7 +30,7 @@ public class WordCount {
         BufferedReader reader = new BufferedReader(new InputStreamReader(connection.openStream()));
         String inputLine = "";
         while(inputLine != null){
-            wordCounter(inputLine, list, updatedMap);
+            wordCounter2(inputLine, list, updatedMap);
             inputLine = reader.readLine();
         }
         reader.close();
@@ -56,15 +56,33 @@ public class WordCount {
         int tempInt;
         for(String testStr : tempStr){
                 tempInt = frequency(input, testStr);
-                if(tempMap.containsKey(testStr)){
-                    tempMap.put(testStr, tempMap.get(testStr)+ tempInt);
+                if(!tempMap.containsKey(testStr)){
+                    tempMap.put(testStr,1);
+                }
+                else{
+                    tempMap.put(testStr, tempMap.get(testStr) + tempInt);
                 }
         }
         return tempMap;
     }
     public static int frequency(String input, String test){
         int amount = 0;
+        int inputLength = input.length();
+        int testLength = test.length();
 
+        for(int index = 0; index <= (inputLength-testLength); index++){
+
+            int innerIndex;
+            for(innerIndex = 0; innerIndex < testLength; innerIndex++){
+                if(input.charAt(index+innerIndex) != test.charAt(innerIndex)){
+                    break;
+                }
+            }
+            if(innerIndex == inputLength){
+                amount++;
+                innerIndex = 0;
+            }
+        }
         return amount;
     }
 }
