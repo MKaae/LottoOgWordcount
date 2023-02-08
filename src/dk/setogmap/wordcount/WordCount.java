@@ -57,7 +57,7 @@ public class WordCount {
         for(String testStr : tempStr){
                 tempInt = frequency(input, testStr);
                 if(!tempMap.containsKey(testStr)){
-                    tempMap.put(testStr,1);
+                    tempMap.put(testStr,0);
                 }
                 else{
                     tempMap.put(testStr, tempMap.get(testStr) + tempInt);

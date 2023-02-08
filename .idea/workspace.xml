@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0824d7d-c8a6-468e-bc04-3c132f20f714" name="Changes" comment="Completed solution per line and half completed solution for actual counter.">
+    <list default="true" id="f0824d7d-c8a6-468e-bc04-3c132f20f714" name="Changes" comment="Completed a frequency solution along with a per line solution depending on how you want to search for it.&#10;Atm it's with substring, maybe i'll add a better memory usage solution.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dk/setogmap/wordcount/WordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dk/setogmap/wordcount/WordCount.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +48,9 @@
       <workItem from="1675755557188" duration="1762000" />
       <workItem from="1675757738399" duration="203000" />
       <workItem from="1675760553501" duration="4685000" />
-      <workItem from="1675818295378" duration="331000" />
+      <workItem from="1675818295378" duration="588000" />
+      <workItem from="1675822234009" duration="159000" />
+      <workItem from="1675822421059" duration="23000" />
     </task>
     <task id="LOCAL-00001" summary="Small tweaks no real changes">
       <created>1675617462821</created>
@@ -93,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675766456857</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Completed a frequency solution along with a per line solution depending on how you want to search for it.&#10;Atm it's with substring, maybe i'll add a better memory usage solution.">
+      <created>1675818872810</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1675818872810</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +123,7 @@
     <MESSAGE value="Tweaks to search2 counter" />
     <MESSAGE value="Added retainAll to lotteryTicket" />
     <MESSAGE value="Completed solution per line and half completed solution for actual counter." />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed solution per line and half completed solution for actual counter." />
+    <MESSAGE value="Completed a frequency solution along with a per line solution depending on how you want to search for it.&#10;Atm it's with substring, maybe i'll add a better memory usage solution." />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed a frequency solution along with a per line solution depending on how you want to search for it.&#10;Atm it's with substring, maybe i'll add a better memory usage solution." />
   </component>
 </project>
