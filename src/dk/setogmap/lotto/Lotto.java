@@ -40,13 +40,15 @@ public class Lotto {
                 winningNumberCount++;
             }
         }
-        for(int bonusNumbers = lotteryNumbers.size()-2; bonusNumbers <= lotteryNumbers.size(); bonusNumbers++){
+        for(int bonusNumbers = lotteryNumbers.size()-1; bonusNumbers <= lotteryNumbers.size(); bonusNumbers++){
             if(lotteryTicket.contains(lotteryNumbers.get(bonusNumbers))){
                 bonusNumberCount++;
             }
         }
+        System.out.println("Your lottery ticket is: " + lotteryTicket);
         lotteryTicket.retainAll(lotteryNumbers.values());
         System.out.println(lotteryTicket);
+        System.out.println("The lottery numbers are: " +lotteryNumbers);
         System.out.println("Amount of winning numbers: " + winningNumberCount);
         System.out.println("Amount of bonus numbers: " + bonusNumberCount);
     }

@@ -12,9 +12,9 @@ import java.util.Map;
 public class WordCount {
     public static void main(String[] args){
         List<String> wordList = new ArrayList<>(){{
+           add("a");
+           add("A");
            add("Ukraine");
-           add("Covid");
-           add("DF");
            add("Putin");
            add("Biden");
         }};

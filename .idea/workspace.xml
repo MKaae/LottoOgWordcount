@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0824d7d-c8a6-468e-bc04-3c132f20f714" name="Changes" comment="Completed a frequency solution along with a per line solution depending on how you want to search for it.&#10;Atm it's with substring, maybe i'll add a better memory usage solution.">
+    <list default="true" id="f0824d7d-c8a6-468e-bc04-3c132f20f714" name="Changes" comment="Added correct initialization of values">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dk/setogmap/lotto/Lotto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dk/setogmap/lotto/Lotto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dk/setogmap/wordcount/WordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dk/setogmap/wordcount/WordCount.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +53,10 @@
       <workItem from="1675818295378" duration="588000" />
       <workItem from="1675822234009" duration="159000" />
       <workItem from="1675822421059" duration="23000" />
+      <workItem from="1675822478615" duration="81000" />
+      <workItem from="1675840725670" duration="274000" />
+      <workItem from="1675841634715" duration="6000" />
+      <workItem from="1675842525618" duration="720000" />
     </task>
     <task id="LOCAL-00001" summary="Small tweaks no real changes">
       <created>1675617462821</created>
@@ -101,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675818872810</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added correct initialization of values">
+      <created>1675822539197</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1675822539197</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +137,7 @@
     <MESSAGE value="Added retainAll to lotteryTicket" />
     <MESSAGE value="Completed solution per line and half completed solution for actual counter." />
     <MESSAGE value="Completed a frequency solution along with a per line solution depending on how you want to search for it.&#10;Atm it's with substring, maybe i'll add a better memory usage solution." />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed a frequency solution along with a per line solution depending on how you want to search for it.&#10;Atm it's with substring, maybe i'll add a better memory usage solution." />
+    <MESSAGE value="Added correct initialization of values" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added correct initialization of values" />
   </component>
 </project>
