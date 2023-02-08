@@ -30,14 +30,14 @@ public class WordCount {
         BufferedReader reader = new BufferedReader(new InputStreamReader(connection.openStream()));
         String inputLine = "";
         while(inputLine != null){
-            wordCounter2(inputLine, list, updatedMap);
+            wordCounterFrequency(inputLine, list, updatedMap);
             inputLine = reader.readLine();
         }
         reader.close();
         return updatedMap;
     }
 
-    private static Map<String, Integer> wordCounter(String input, List<String> words, Map<String, Integer> tempMap) {
+    private static Map<String, Integer> wordCounterPerLine(String input, List<String> words, Map<String, Integer> tempMap) {
         String[] tempStr = words.toArray(new String[0]);
         for(String testStr: tempStr){
             if(input.contains(testStr)){
@@ -51,7 +51,7 @@ public class WordCount {
         }
         return tempMap;
     }
-    private static Map<String,Integer> wordCounter2(String input, List<String> words, Map<String,Integer> tempMap){
+    private static Map<String,Integer> wordCounterFrequency(String input, List<String> words, Map<String,Integer> tempMap){
         String[] tempStr = words.toArray(new String[0]);
         int tempInt;
         for(String testStr : tempStr){
@@ -69,18 +69,9 @@ public class WordCount {
         int amount = 0;
         int inputLength = input.length();
         int testLength = test.length();
-
-        for(int index = 0; index <= (inputLength-testLength); index++){
-
-            int innerIndex;
-            for(innerIndex = 0; innerIndex < testLength; innerIndex++){
-                if(input.charAt(index+innerIndex) != test.charAt(innerIndex)){
-                    break;
-                }
-            }
-            if(innerIndex == inputLength){
+        for(int index = 0; index < inputLength-testLength; index++){
+            if(input.substring(index, index+testLength).equals(test)){
                 amount++;
-                innerIndex = 0;
             }
         }
         return amount;

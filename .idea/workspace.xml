@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0824d7d-c8a6-468e-bc04-3c132f20f714" name="Changes" comment="Added retainAll to lotteryTicket">
+    <list default="true" id="f0824d7d-c8a6-468e-bc04-3c132f20f714" name="Changes" comment="Completed solution per line and half completed solution for actual counter.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dk/setogmap/wordcount/WordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dk/setogmap/wordcount/WordCount.java" afterDir="false" />
     </list>
@@ -48,7 +48,8 @@
       <workItem from="1675681616410" duration="1757000" />
       <workItem from="1675755557188" duration="1762000" />
       <workItem from="1675757738399" duration="203000" />
-      <workItem from="1675760553501" duration="4626000" />
+      <workItem from="1675760553501" duration="4685000" />
+      <workItem from="1675818295378" duration="331000" />
     </task>
     <task id="LOCAL-00001" summary="Small tweaks no real changes">
       <created>1675617462821</created>
@@ -85,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675764233395</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Completed solution per line and half completed solution for actual counter.">
+      <created>1675766456857</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1675766456857</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,6 +114,7 @@
     <MESSAGE value="Small tweaks no real changes" />
     <MESSAGE value="Tweaks to search2 counter" />
     <MESSAGE value="Added retainAll to lotteryTicket" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added retainAll to lotteryTicket" />
+    <MESSAGE value="Completed solution per line and half completed solution for actual counter." />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed solution per line and half completed solution for actual counter." />
   </component>
 </project>
